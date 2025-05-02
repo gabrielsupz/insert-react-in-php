@@ -31,18 +31,14 @@ npm install
 npm run build
 ```
 
-3. Copie a pasta gerada `dist` (dentro do projeto React) para dentro da pasta `web` da aplicação PHP:
+3. Será gerado a pasta `react` dentro da pasta `web` da aplicação PHP diretamente:
 
-```bash
-cp -r dist ../php-app/web/react
-```
-
-> Certifique-se de que a estrutura final fique como: `php-app/web/react/index.html` (ou os arquivos gerados pelo Vite).
+> A esttrutura final ficará algo como: `php/web/react/index.html` (ou os arquivos gerados pelo Vite).
 
 4. Rode o servidor PHP embutido:
 
 ```bash
-cd ../php-app
+cd ./php
 php -S 127.0.0.1:5000 -t web
 ```
 
@@ -85,7 +81,7 @@ php -S 127.0.0.1:5000 -t web
 ## 📁 Estrutura Sugerida
 
 ```
-/php-app
+/php
   ├── web/
   │   ├── index.php
   │   └── react/      ← pasta onde os arquivos buildados do React serão copiados

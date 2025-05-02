@@ -43,7 +43,7 @@ export default defineConfig({
         assetFileNames: "assets/[name][extname]",
       },
     },
-    outDir: "web/react",
+    outDir: "../php/web/react",
     emptyOutDir: true,
   },
 });
