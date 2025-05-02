@@ -38,8 +38,7 @@ npm run build
 4. Rode o servidor PHP embutido:
 
 ```bash
-cd ./php
-php -S 127.0.0.1:5000 -t web
+php -S 127.0.0.1:5000 -t ./php/web
 ```
 
 5. Acesse no navegador:  

@@ -71,13 +71,13 @@ export const MyComponent = ({ userName }: Props) => {
         </h2>
         <ul className="tw:list-disc tw:ml-5 tw:space-y-1 tw:text-sm">
           <li>
-            <strong>Iframe:</strong> garante isolamento total entre os estilos
+            <strong>Iframe:</strong> Garante isolamento total entre os estilos
             do React e da aplicação PHP. Cada componente React pode ter seu
             próprio HTML separado e não é afetado nem afeta o restante da
             aplicação.
           </li>
           <li>
-            <strong>DOM:</strong> o React é inserido diretamente no DOM da
+            <strong>DOM:</strong> React é inserido diretamente no DOM da
             aplicação PHP. Nesse caso, os estilos CSS de ambos os lados
             compartilham o mesmo escopo, podendo gerar conflitos de layout e
             aparência.
