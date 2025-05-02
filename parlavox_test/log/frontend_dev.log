@@ -1,0 +1,2 @@
+May 02 09:58:10 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'test',)
+May 02 09:58:10 symfony [warning] {sfWebDebugLogger}  Warning at /home/gabrielsuptitz/Documents/Treinos_Testes/php-rest/php/lib/vendor/symfony/lib/autoload/sfAutoload.class.php on line 188 (require(/home/gabrielsuptitz/Documents/Treinos_Testes/php-rest/parlavox_test/apps/frontend/lib/myUser.class.php): failed to open stream: No such file or directory)

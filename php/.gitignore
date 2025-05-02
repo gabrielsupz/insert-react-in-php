@@ -1,0 +1,31 @@
+# Ignora cache do Symfony
+cache/*
+!cache/.htaccess
+
+# Ignora logs do Symfony
+log/*
+!log/.htaccess
+
+# Ignora arquivos de sessão
+sessions/*
+
+# Ignora uploads (se forem temporários ou não essenciais)
+web/uploads/*
+!web/uploads/.htaccess
+
+
+# Ignora arquivos específicos de IDEs/editors
+*.swp
+*.swo
+*.bak
+*.tmp
+.DS_Store
+.idea/
+.vscode/
+
+# Ignora composer (caso tenha sido adicionado depois)
+vendor/
+composer.lock
+
+# Ignora arquivos do sistema
+Thumbs.db

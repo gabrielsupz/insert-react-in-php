@@ -1976,3 +1976,87 @@ Apr 30 15:17:07 symfony [info] {sfWebDebugLogger} Factories 3.52 ms (1)
 Apr 30 15:17:07 symfony [info] {sfWebDebugLogger} Action "home/info" 0.10 ms (1)
 Apr 30 15:17:07 symfony [info] {sfWebDebugLogger} View "Success" for "home/info" 2.33 ms (1)
 Apr 30 15:17:07 symfony [info] {sfWebResponse} Send content (30308 o)
+May 02 09:59:46 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'test',)
+May 02 09:59:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 02 09:59:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 02 09:59:46 symfony [info] {homeActions} Call "homeActions->executeTest()"
+May 02 09:59:46 symfony [info] {sfPHPView} Render "/home/gabrielsuptitz/Documents/Treinos_Testes/php-rest/php/apps/frontend/modules/home/templates/testSuccess.php"
+May 02 09:59:46 symfony [info] {sfPHPView} Decorate content with "/home/gabrielsuptitz/Documents/Treinos_Testes/php-rest/php/apps/frontend/templates/layout.php"
+May 02 09:59:46 symfony [info] {sfPHPView} Render "/home/gabrielsuptitz/Documents/Treinos_Testes/php-rest/php/apps/frontend/templates/layout.php"
+May 02 09:59:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 02 09:59:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 02 09:59:46 symfony [info] {sfWebDebugLogger} Configuration 19.84 ms (8)
+May 02 09:59:46 symfony [info] {sfWebDebugLogger} Factories 32.71 ms (1)
+May 02 09:59:46 symfony [info] {sfWebDebugLogger} Action "home/test" 0.04 ms (1)
+May 02 09:59:46 symfony [info] {sfWebDebugLogger} View "Success" for "home/test" 7.17 ms (1)
+May 02 09:59:46 symfony [info] {sfWebResponse} Send content (29789 o)
+May 02 10:03:46 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'test',)
+May 02 10:03:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 02 10:03:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 02 10:03:46 symfony [info] {homeActions} Call "homeActions->executeTest()"
+May 02 10:03:46 symfony [info] {sfPHPView} Render "/home/gabrielsuptitz/Documents/Treinos_Testes/php-rest/php/apps/frontend/modules/home/templates/testSuccess.php"
+May 02 10:03:46 symfony [info] {sfPHPView} Decorate content with "/home/gabrielsuptitz/Documents/Treinos_Testes/php-rest/php/apps/frontend/templates/layout.php"
+May 02 10:03:46 symfony [info] {sfPHPView} Render "/home/gabrielsuptitz/Documents/Treinos_Testes/php-rest/php/apps/frontend/templates/layout.php"
+May 02 10:03:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 02 10:03:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 02 10:03:46 symfony [info] {sfWebDebugLogger} Configuration 19.89 ms (8)
+May 02 10:03:46 symfony [info] {sfWebDebugLogger} Factories 32.99 ms (1)
+May 02 10:03:46 symfony [info] {sfWebDebugLogger} Action "home/test" 0.04 ms (1)
+May 02 10:03:46 symfony [info] {sfWebDebugLogger} View "Success" for "home/test" 7.10 ms (1)
+May 02 10:03:46 symfony [info] {sfWebResponse} Send content (29985 o)
+May 02 10:03:49 symfony [info] {sfPatternRouting} Match route "dom" (/dom) for /dom with parameters array (  'module' => 'home',  'action' => 'dom',)
+May 02 10:03:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 02 10:03:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 02 10:03:49 symfony [info] {homeActions} Call "homeActions->executeDom()"
+May 02 10:03:49 symfony [info] {sfPHPView} Render "/home/gabrielsuptitz/Documents/Treinos_Testes/php-rest/php/apps/frontend/modules/home/templates/domSuccess.php"
+May 02 10:03:49 symfony [info] {sfPHPView} Decorate content with "/home/gabrielsuptitz/Documents/Treinos_Testes/php-rest/php/apps/frontend/templates/layout.php"
+May 02 10:03:49 symfony [info] {sfPHPView} Render "/home/gabrielsuptitz/Documents/Treinos_Testes/php-rest/php/apps/frontend/templates/layout.php"
+May 02 10:03:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 02 10:03:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 02 10:03:49 symfony [info] {sfWebDebugLogger} Configuration 0.68 ms (8)
+May 02 10:03:49 symfony [info] {sfWebDebugLogger} Factories 5.39 ms (1)
+May 02 10:03:49 symfony [info] {sfWebDebugLogger} Action "home/dom" 0.10 ms (1)
+May 02 10:03:49 symfony [info] {sfWebDebugLogger} View "Success" for "home/dom" 2.67 ms (1)
+May 02 10:03:49 symfony [info] {sfWebResponse} Send content (30006 o)
+May 02 10:03:53 symfony [info] {sfPatternRouting} Match route "iframe" (/iframe) for /iframe with parameters array (  'module' => 'home',  'action' => 'iframe',)
+May 02 10:03:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 02 10:03:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 02 10:03:53 symfony [info] {homeActions} Call "homeActions->executeIframe()"
+May 02 10:03:53 symfony [info] {sfPHPView} Render "/home/gabrielsuptitz/Documents/Treinos_Testes/php-rest/php/apps/frontend/modules/home/templates/iframeSuccess.php"
+May 02 10:03:53 symfony [info] {sfPHPView} Decorate content with "/home/gabrielsuptitz/Documents/Treinos_Testes/php-rest/php/apps/frontend/templates/layout.php"
+May 02 10:03:53 symfony [info] {sfPHPView} Render "/home/gabrielsuptitz/Documents/Treinos_Testes/php-rest/php/apps/frontend/templates/layout.php"
+May 02 10:03:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 02 10:03:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 02 10:03:53 symfony [info] {sfWebDebugLogger} Configuration 0.60 ms (8)
+May 02 10:03:53 symfony [info] {sfWebDebugLogger} Factories 3.48 ms (1)
+May 02 10:03:53 symfony [info] {sfWebDebugLogger} Action "home/iframe" 0.10 ms (1)
+May 02 10:03:53 symfony [info] {sfWebDebugLogger} View "Success" for "home/iframe" 2.13 ms (1)
+May 02 10:03:53 symfony [info] {sfWebResponse} Send content (30149 o)
+May 02 10:03:59 symfony [info] {sfPatternRouting} Match route "sobre" (/sobre) for /sobre with parameters array (  'module' => 'home',  'action' => 'info',)
+May 02 10:03:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 02 10:03:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 02 10:03:59 symfony [info] {homeActions} Call "homeActions->executeInfo()"
+May 02 10:03:59 symfony [info] {sfPHPView} Render "/home/gabrielsuptitz/Documents/Treinos_Testes/php-rest/php/apps/frontend/modules/home/templates/infoSuccess.php"
+May 02 10:03:59 symfony [info] {sfPHPView} Decorate content with "/home/gabrielsuptitz/Documents/Treinos_Testes/php-rest/php/apps/frontend/templates/layout.php"
+May 02 10:03:59 symfony [info] {sfPHPView} Render "/home/gabrielsuptitz/Documents/Treinos_Testes/php-rest/php/apps/frontend/templates/layout.php"
+May 02 10:03:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 02 10:03:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 02 10:03:59 symfony [info] {sfWebDebugLogger} Configuration 0.60 ms (8)
+May 02 10:03:59 symfony [info] {sfWebDebugLogger} Factories 3.46 ms (1)
+May 02 10:03:59 symfony [info] {sfWebDebugLogger} Action "home/info" 0.09 ms (1)
+May 02 10:03:59 symfony [info] {sfWebDebugLogger} View "Success" for "home/info" 2.00 ms (1)
+May 02 10:03:59 symfony [info] {sfWebResponse} Send content (30034 o)
+May 02 10:04:03 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'test',)
+May 02 10:04:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 02 10:04:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 02 10:04:03 symfony [info] {homeActions} Call "homeActions->executeTest()"
+May 02 10:04:03 symfony [info] {sfPHPView} Render "/home/gabrielsuptitz/Documents/Treinos_Testes/php-rest/php/apps/frontend/modules/home/templates/testSuccess.php"
+May 02 10:04:03 symfony [info] {sfPHPView} Decorate content with "/home/gabrielsuptitz/Documents/Treinos_Testes/php-rest/php/apps/frontend/templates/layout.php"
+May 02 10:04:03 symfony [info] {sfPHPView} Render "/home/gabrielsuptitz/Documents/Treinos_Testes/php-rest/php/apps/frontend/templates/layout.php"
+May 02 10:04:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 02 10:04:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 02 10:04:03 symfony [info] {sfWebDebugLogger} Configuration 0.62 ms (8)
+May 02 10:04:03 symfony [info] {sfWebDebugLogger} Factories 3.43 ms (1)
+May 02 10:04:03 symfony [info] {sfWebDebugLogger} Action "home/test" 0.09 ms (1)
+May 02 10:04:03 symfony [info] {sfWebDebugLogger} View "Success" for "home/test" 1.73 ms (1)
+May 02 10:04:04 symfony [info] {sfWebResponse} Send content (30046 o)
