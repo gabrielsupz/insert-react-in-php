@@ -9,8 +9,7 @@
   <div class="page-wrapper">
     <form method="GET" class="user-form">
       <div class="form-description">
-        Digite seu nome abaixo. Ele será processado em PHP e enviado como
-        propriedade para o componente React.
+        Digite seu nome abaixo. Ele será processado em PHP e recuperado no componente React
       </div>
 
       <label for="userName">Qual seu nome?</label>
@@ -43,7 +42,7 @@
   }
 
   .page-wrapper {
-    height: 50%;
+    height: 85%;
     display: flex;
     align-items: center;
     justify-content: center;

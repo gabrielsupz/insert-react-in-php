@@ -1,10 +1,14 @@
 <header style="background-color:#4B0082; color:white; padding:20px 40px; display:flex; justify-content:space-between; align-items:center;">
-  <div style="font-size:24px; font-weight:bold;">React & PHP</div>
-  <nav>
-    <a href="/" style="color:white; margin-left:20px; text-decoration:none;">Início</a>
-    <a href="/dom" style="color:white; margin-left:20px; text-decoration:none;">DOM</a>
-    <a href="/iframe" style="color:white; margin-left:20px; text-decoration:none;">Iframe</a>
-    <a href="/sobre" style="color:white; margin-left:20px; text-decoration:none;">Rotas</a>
+<div style="font-size:24px; font-weight:bold; display: flex; align-items: center;">
+  <img style="height:70px; width: 70px; margin-right: 10px;" src="/assets/logo.png" alt="Logo" srcset="">
+  <h2>React & Symfony</h2>
+</div>
+
+<nav>
+    <a href="/">Início</a>
+    <a href="/dom">DOM</a>
+    <a href="/iframe">Iframe</a>
+    <a href="/sobre">Rotas</a>
   </nav>
   <div style="display: flex; align-items: center; gap: 10px; margin-left: 30px;">
     <button onclick="adjustFontSize(1)" style="padding: 8px 12px; font-size: 16px;">+A</button>
@@ -65,6 +69,25 @@
     document.body.classList.toggle("high-contrast");
   }
 </script>
+
+<style>
+    nav {
+      display: flex;
+      gap: 20px
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    nav a:hover {
+      font-weight: 600;
+    }
+  </style>
 
 <script>
   // Função para obter o valor do parâmetro userName da URL

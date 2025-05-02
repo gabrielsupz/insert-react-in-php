@@ -117,58 +117,6 @@ export const MyComponent = ({ userName }: Props) => {
         </a>
         .
       </p>
-
-      <div className="tw:flex tw:flex-wrap tw:items-center tw:justify-center tw:gap-4 tw:pt-4 tw:border-t tw:mt-6">
-        <span title="React">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-            alt="React"
-            className="tw:w-8 tw:h-8"
-          />
-        </span>
-        <span title="PHP">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-            alt="PHP"
-            className="tw:w-8 tw:h-8"
-          />
-        </span>
-        <span title="TypeScript">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-            alt="TypeScript"
-            className="tw:w-8 tw:h-8"
-          />
-        </span>
-        <span title="JavaScript">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-            alt="JavaScript"
-            className="tw:w-8 tw:h-8"
-          />
-        </span>
-        <span title="CSS3">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-            alt="CSS"
-            className="tw:w-8 tw:h-8"
-          />
-        </span>
-        <span title="HTML5">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-            alt="HTML"
-            className="tw:w-8 tw:h-8"
-          />
-        </span>
-        <span title="Symfony">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg"
-            alt="Symfony"
-            className="tw:w-8 tw:h-8 tw:invert"
-          />
-        </span>
-      </div>
     </div>
   );
 };
