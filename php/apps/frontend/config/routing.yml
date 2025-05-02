@@ -1,0 +1,30 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: home, action: test }
+  
+sobre:
+  url:   /sobre
+  param: { module: home, action: info }
+
+iframe:
+  url:   /iframe
+  param: { module: home, action: iframe }
+
+dom:
+  url:   /dom
+  param: { module: home, action: dom }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*
+
+
