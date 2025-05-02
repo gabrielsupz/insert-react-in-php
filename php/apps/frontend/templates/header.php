@@ -6,9 +6,13 @@
     <a href="/iframe" style="color:white; margin-left:20px; text-decoration:none;">Iframe</a>
     <a href="/sobre" style="color:white; margin-left:20px; text-decoration:none;">Rotas</a>
   </nav>
-  <button onclick="toggleHighContrast()" style="margin-left: 30px; padding: 8px 16px; background: black; color: yellow; border: none; border-radius: 4px; cursor: pointer;">
-    Alto Contraste
-  </button>
+  <div style="display: flex; align-items: center; gap: 10px; margin-left: 30px;">
+    <button onclick="adjustFontSize(1)" style="padding: 8px 12px; font-size: 16px;">+A</button>
+    <button onclick="adjustFontSize(-1)" style="padding: 8px 12px; font-size: 16px;">-A</button>
+    <button onclick="toggleHighContrast()" style="padding: 8px 16px; background: black; color: yellow; border: none; border-radius: 4px; cursor: pointer;">
+      Alto Contraste
+    </button>
+  </div>
 </header>
 
 <style>
@@ -50,7 +54,25 @@
 </style>
 
 <script>
+  let baseFontSize = 100;
+
+  function adjustFontSize(delta) {
+    baseFontSize = Math.max(75, baseFontSize + delta * 10);
+    document.documentElement.style.fontSize = baseFontSize + '%';
+  }
+
   function toggleHighContrast() {
     document.body.classList.toggle("high-contrast");
   }
 </script>
+
+<style>
+  /* Força todos os textos a usarem rem (opcional, mas ajuda) */
+  body, p, a, h1, h2, h3, h4, h5, h6, span, div, button, input, label {
+    font-size: 1rem !important;
+  }
+
+  html {
+    font-size: 100%; /* 100% = 16px */
+  }
+</style>
