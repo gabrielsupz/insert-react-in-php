@@ -11,6 +11,7 @@ sessions/*
 
 # Ignora uploads (se forem temporários ou não essenciais)
 web/uploads/*
+web/react
 !web/uploads/.htaccess
 
 

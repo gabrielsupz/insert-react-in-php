@@ -1,5 +1,5 @@
 <header style="background-color:#4B0082; color:white; padding:20px 40px; display:flex; justify-content:space-between; align-items:center;">
-  <div style="font-size:24px; font-weight:bold;">React & PHP - Parlavox</div>
+  <div style="font-size:24px; font-weight:bold;">React & PHP</div>
   <nav>
     <a href="/" style="color:white; margin-left:20px; text-decoration:none;">Início</a>
     <a href="/dom" style="color:white; margin-left:20px; text-decoration:none;">DOM</a>
@@ -66,11 +66,33 @@
   }
 </script>
 
-<style>
-  /* Força todos os textos a usarem rem (opcional, mas ajuda) */
-  body, p, a, h1, h2, h3, h4, h5, h6, span, div, button, input, label {
-    font-size: 1rem !important;
+<script>
+  // Função para obter o valor do parâmetro userName da URL
+  function getUserNameFromUrl() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('userName');
   }
+
+  // Função para atualizar links com o parâmetro userName
+  function updateLinks() {
+    const userName = getUserNameFromUrl();
+    if (userName) {
+      // Seleciona todos os links dentro do seu header
+      const links = document.querySelectorAll('header nav a');
+      links.forEach(link => {
+        const url = new URL(link.href);
+        // Adiciona ou atualiza o parâmetro userName na URL
+        url.searchParams.set('userName', userName);
+        link.href = url.toString();
+      });
+    }
+  }
+
+  // Chama a função para atualizar os links quando a página for carregada
+  window.addEventListener('load', updateLinks);
+</script>
+
+<style>
 
   html {
     font-size: 100%; /* 100% = 16px */
