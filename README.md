@@ -97,6 +97,75 @@ php -S 127.0.0.1:5000 -t ./php/web
 - Centralize a lógica de montagem do React em pontos claros do HTML (ex: `div id="react-root"`).
 - Quando possível, mantenha o React responsável apenas pelo componente específico, sem assumir o controle da página inteira.
 
+
+## 📑 Etapas para Criar e Configurar o Banco de Dados
+
+### 1. Instalar o PostgreSQL
+
+Caso ainda não tenha o PostgreSQL instalado, você pode instalá-lo com os seguintes comandos (para sistemas baseados em Debian/Ubuntu):
+
+```bash
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+```
+
+### 2. Acessar o PostgreSQL
+
+Após a instalação, acesse o PostgreSQL:
+
+```bash
+sudo -u postgres psql
+```
+
+### 3. Criar Banco de Dados
+
+Crie o banco de dados que será utilizado pela aplicação:
+
+```sql
+CREATE DATABASE react_in_synfoni_db;
+```
+
+### 4. Criar Tabela (Exemplo de Tabela de Vereadores)
+
+Exemplo de comando SQL para criar uma tabela de vereadores:
+
+```sql
+CREATE TABLE vereadores (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    telefone VARCHAR(15),
+    email VARCHAR(255) NOT NULL,
+    id_partido INT,
+    numero_votos INT
+);
+```
+
+### 5. Configuração no Symfony
+
+Edite o arquivo `config/databases.yml` para configurar a conexão com o banco de dados:
+
+```yaml
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'pgsql:host=localhost;dbname=react_in_synfoni_db'
+      username: 'postgres'
+      password: 'sua_senha'
+      attributes:
+        charset: UTF8
+```
+
+### 6. Rodar as Migrations (Se Necessário)
+
+Caso você precise rodar as migrations para gerar as tabelas automaticamente a partir do modelo, use o seguinte comando:
+
+```bash
+php symfony doctrine:build --all --and-load
+```
+
+Agora, o banco de dados está configurado e pronto para ser utilizado com a aplicação Symfony.
+
 ---
 
 Este projeto serve como ponto de partida para modernizar gradualmente o frontend de sistemas PHP legados, promovendo uma transição suave e controlada para tecnologias modernas.

@@ -1,0 +1,19 @@
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'pgsql:host=127.0.0.1;dbname=synfoni_db'
+      username: root
+      password: root
+
+#   Comando para atuar no banco criando tabelas
+#   php symfony doctrine:build --all --and-load   -> Gere e carregue as tabelas
+#   php symfony doctrine:build-model
+#   php symfony doctrine:build-forms
+#   php symfony doctrine:build --sql -> Gere o sql
+
+#   php ./web/runSeed.php  -> Rode o seed ( não é obrigatório )
+
+#   $ php -S 127.0.0.1:5000 -t web -> Teste rodando o projeto
+
+#   Criar module ->  php symfony generate:module frontend nome_module

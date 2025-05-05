@@ -18,6 +18,14 @@ dom:
   url:   /dom
   param: { module: home, action: dom }
 
+new_alderman:
+  url:   /vereador
+  param: { module: alderman, action: new }
+
+list_aldermans:
+  url:   /vereador/list
+  param: { module: alderman, action: index }
+
 # generic rules
 # please, remove them by adding more specific rules
 default_index:

@@ -1,0 +1,92 @@
+Partido:
+  actAs:
+    Timestampable: ~
+  connection: doctrine
+  tableName: partido
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: partido_id
+    nome:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+  relations:
+    Vereador:
+      local: id
+      foreign: partido_id
+      type: many
+Vereador:
+  connection: doctrine
+  tableName: vereador
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      sequence: vereador_id
+    nome:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    telefone:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    email:
+      type: string()
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    numero_votos:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      notnull: false
+      primary: false
+    partido_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      notnull: true
+      primary: false
+  relations:
+    Partido:
+      local: partido_id
+      foreign: id
+      type: one

@@ -9,6 +9,7 @@
     <a href="/dom">DOM</a>
     <a href="/iframe">Iframe</a>
     <a href="/sobre">Rotas</a>
+    <a href="/vereador">Form</a>
   </nav>
   <div style="display: flex; align-items: center; gap: 10px; margin-left: 30px;">
     <button onclick="adjustFontSize(1)" style="padding: 8px 12px; font-size: 16px;">+A</button>

@@ -1,0 +1,32 @@
+Vereador:
+  columns:
+    id:
+      type: integer(11)
+      primary: true
+      autoincrement: true
+    nome:
+      type: string(255)
+    telefone:
+      type: string(15)
+    email:
+      type: string(255)
+    numero_votos:
+      type: integer(11)
+    id_partido:
+      type: integer(11)
+
+  relations:
+    Partido:
+      local: id_partido
+      foreign: id
+      foreignTable: Partido
+      onDelete: CASCADE
+
+Partido:
+  columns:
+    id:
+      type: integer(11)
+      primary: true
+      autoincrement: true
+    nome:
+      type: string(255)

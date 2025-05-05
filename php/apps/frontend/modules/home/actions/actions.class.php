@@ -32,6 +32,25 @@ class homeActions extends sfActions
 {
   $this->texto = 'Esta é a página sobre como adicionar o react usando o DOM';
 }
+public function executeNewAlderman(sfWebRequest $request)
+{
+    $this->form = new VereadorForm();
+
+    if ($request->isMethod('post')) {
+        $this->form->bind($request->getParameter($this->form->getName()));
+
+        if ($this->form->isValid()) {
+            $this->form->save();
+            $this->redirect('@list_aldermans');
+
+        }
+    }
+}
+
+public function executeListAldermans(sfWebRequest $request)
+{
+    $this->vereadores = Doctrine_Core::getTable('Vereador')->findAll();
+}
 }
 
 
